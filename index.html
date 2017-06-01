@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Survey</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/styles.css" type="text/css">
+    <script src="js/jquery-3.2.1.js"></script>
+    <script src="js/scripts.js"></script>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Survey</h1>
+      <form id="formOne">
+        <div class="form-group">
+          <label for="name">Enter your Name:</label>
+          <input id="name" class="form-control" type="text">
+        </div>
+        <h2>Select your favorite food:</h2>
+        <select class="form-control" id="food">
+          <option>Fried Chicken</option>
+          <option>Pizza</option>
+          <option>Sushi</option>
+          <option>Fried Rice</option>
+        </select>
+
+        <h2>Select your favorite genre</h2>
+        <select class="form-control" id="Music">
+          <option>Jazz</option>
+          <option>EDM</option>
+          <option>Hip Hop</option>
+          <option>Country</option>
+        </select>
+
+        <h2>Vote for your favorite artist:</h2>
+        <div class="radio">
+        <label>
+          <input type="radio" name="Artist" value="Nicki Minaj" checked>
+          Nicki Minaj
+        </label>
+        </div>
+        <div class="radio">
+          <label>
+            <input type="radio" name="Artist" value="Drake">
+            Drake
+          </label>
+        </div>
+        <div class="radio">
+          <label>
+            <input type="radio" name="Artist" value="Justin Beiber">
+            Justin Beiber
+          </label>
+        </div>
+
+        <button type="submit" class="btn">Input your information</button>
+      </form>
+
+      <h1>Your Information:</h1>
+      <p>Thank you for your survey, <span class="name"></span>!</p>
+      <p>Your favorite food appears to be <span class="food"></span>
+      <p>Your favorite music appears to be <span class="music"></span>
+      <p>You voted for the artist: <span class="artist"></span>
+
+    </div>
+  </body>
+</html>
